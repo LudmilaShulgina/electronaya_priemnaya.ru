@@ -15,24 +15,31 @@
         <script src="js/webform.js"></script>
     </head>
     <body>
-        <form method="post" id='box'>
-            <label id="where_problem"><strong>Место проблемы: Квартира</strong></label><input type="hidden" id="problem_place" name = "problem_place" /><br>
-            <label id="what_problem"><strong>Выбранная проблема:</strong></label><input id="problem_theme" name = "problem_theme" /><br>
-            <br>
-            <label>Представьтесь пожалуйста:</label> <input name="name" type="text" size="45"><br>
-            <label>Адрес (при необходимости укажите этаж, подъезд):</label><input name="adres" type="text" size="45" id="adres" required><br>
-            <label>Контактный телефон (не обязательно):</label><input name="tele" type="text" size="45" id="tele"><br>
-            <label>Электронная почта (не обязательно):</label><input name="email" type="email" size="45"><br>
-            <label>Комментарий к проблеме:</label><textarea name="mess" cols="45" rows="4"></textarea><br>
-            
-            1. Обращение не принимается к рассмотрению, если:<br>
-                - в нем содержится нецензурная лексика, оскорбительные выражения;<br>
-                - текст написан по-русски с использованием латиницы или набран целиком заглавными буквами, не разбит на предложения;<br>
-                - указан неполный или недостоверный  адрес;<br>
-            2. Информация о персональных данных авторов обращений, направленных в электронном виде, хранится и обрабатывается с соблюдением требований российского законодательства о персональных данных.<br>
-        <input type="submit" value="Отправить обращение">
-     
-        </form>
+        <div id='box'>
+            <div id="img_place_box">
+                <div class="img_place_name"><img id="img_place" alt=""></div>
+                <br/>
+                <div id="h2box"><h2 id='img_place_name'></h2></div>
+            </div>
+            <form method="post" >
+                <label id="where_problem"><strong>Место проблемы: Квартира</strong></label><input type="hidden" id="problem_place" name = "problem_place" /><br>
+                <label id="what_problem"><strong>Выбранная проблема:</strong></label><input id="problem_theme" name = "problem_theme" /><br>
+                <br>
+                <label>Представьтесь пожалуйста:</label> <input name="name" type="text" size="45"><br>
+                <label>Адрес (при необходимости укажите этаж, подъезд):</label><input name="adres" type="text" size="45" id="adres" required><br>
+                <label>Контактный телефон (не обязательно):</label><input name="tele" type="text" size="45" id="tele"><br>
+                <label>Электронная почта (не обязательно):</label><input name="email" type="email" size="45"><br>
+                <label>Комментарий к проблеме:</label><textarea name="mess" cols="45" rows="4"></textarea><br>
+
+                1. Обращение не принимается к рассмотрению, если:<br>
+                    - в нем содержится нецензурная лексика, оскорбительные выражения;<br>
+                    - текст написан по-русски с использованием латиницы или набран целиком заглавными буквами, не разбит на предложения;<br>
+                    - указан неполный или недостоверный  адрес;<br>
+                2. Информация о персональных данных авторов обращений, направленных в электронном виде, хранится и обрабатывается с соблюдением требований российского законодательства о персональных данных.<br>
+            <input type="submit" value="Отправить обращение">
+
+            </form>
+        </div>
         <div id="priemnaya_table">
         <table width="100%" border="0" cellpadding="0" cellspacing="0">
             <tbody>
