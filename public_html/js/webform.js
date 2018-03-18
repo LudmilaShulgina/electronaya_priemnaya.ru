@@ -18,19 +18,19 @@ $(document).ready(function() {
                 if(problem_class==="flat")
                 {
                     problem_place="Квартира";
-                    $('#img_place').attr('src','../img/flat.jpg');
+                    $('#img_place').attr('src','../img/flat.png');
                     $('#img_place_name').html('Квартира');
                 }
                  else if(problem_class==="floor") 
                 {
                      problem_place="Подъезд";
-                    $('#img_place').attr('src','../img/floor.jpg');
+                    $('#img_place').attr('src','../img/floor.png');
                     $('#img_place_name').html('Подъезд');
                 }
                  else if(problem_class==="house")
                  {
                      problem_place="Дом";
-                     $('#img_place').attr('src','../img/house.jpg');
+                     $('#img_place').attr('src','../img/house.png');
                      $('#img_place_name').html('Дом');
                  }
                  $("#where_problem").html('<label><strong>Место проблемы: '+problem_place+'</strong></label>');
